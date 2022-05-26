@@ -1,0 +1,9 @@
+-r base.txt
+
+notebook
+ipython
+
+black
+flake8
+mypy
+tox

@@ -1,0 +1,18 @@
+version: 0.1
+
+environment: development
+
+level: 2
+
+files:
+  - image:
+    - .png
+    - .jpg
+    - .jpeg
+    - .svg
+  - video:
+    - .mp3
+    - .mp4
+
+tags:
+  - iframe
