@@ -1,0 +1,30 @@
+version: 0.1
+
+environment: development
+
+domain: tv2.dk
+
+cookie: /html/body/div[1]/div/div/div/div[2]/div/button[3]
+
+files:
+  - image:
+    - .png
+    - .jpg
+    - .jpeg
+    - .svg
+
+  - video:
+    - .mp4
+
+tags:
+  - iframe
+  - video
+  - lima-video
+
+classes:
+  - tc_ad
+  - tc_video
+  - adContainer
+
+ids:
+  - google_ads

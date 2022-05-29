@@ -1,6 +1,5 @@
-import requests
+from typing import Union
 from urllib.parse import urlparse
-from bs4 import BeautifulSoup
 
 from adbot.utils.exceptions import NotURLObject
 
@@ -32,6 +31,9 @@ class URL:
     def __repr__(self) -> str:
         return f"URL<{self.url}>"
 
+    def to_str(self) -> str:
+        return self._url
+
     @property
     def url(self) -> str:
         return self._url
@@ -46,12 +48,14 @@ class URL:
 
 
 class Website:
-    def __init__(self, url: URL) -> None:
+    def __init__(self, uri: Union[str, URL]) -> None:
+        if isinstance(str, uri):
+            url = URL(uri=uri)
         self._url = url
         self._parsed_url = urlparse(str(url))
 
     @property
-    def url(self) -> str:
+    def url(self) -> URL:
         return self._url
 
     @property

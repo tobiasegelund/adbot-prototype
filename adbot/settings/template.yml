@@ -2,7 +2,9 @@ version: 0.1
 
 environment: development
 
-level: 2
+domain: template.dk
+
+cookie: button
 
 files:
   - image:
@@ -10,9 +12,15 @@ files:
     - .jpg
     - .jpeg
     - .svg
+
   - video:
-    - .mp3
     - .mp4
 
 tags:
   - iframe
+
+classes:
+  - banner
+
+ids:
+  - google_ads
